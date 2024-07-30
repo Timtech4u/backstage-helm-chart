@@ -4,6 +4,17 @@
 
 replicaCount: 1
 
+ingress:
+  enabled: false
+  annotations: {}
+  host: example.com
+  path: /
+  pathType: Prefix
+  tls: false
+  tlsSecretName: ""
+  className: "" # Optional: specify an ingress class
+
+
 image:
   repository: "ghcr.io/guymenahem/"
   name: "backstage-platformers"
